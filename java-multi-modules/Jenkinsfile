@@ -8,9 +8,11 @@ pipeline {
 		}
 		stage('deploy') {
 			steps {
-				sh 'cd java-multi-modules'
-				sh 'ls -al'
-				sh 'mvn deploy'
+				sh '''
+					cd java-multi-modules
+					ls -al
+					mvn deploy
+				'''
 			}
 		}
 	}
