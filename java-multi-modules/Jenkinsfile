@@ -3,15 +3,16 @@ pipeline {
   stages {
 	  stage('Start') {
   		steps {
-       		// do something
-   		    // more steps
-        	sh 'echo id && ls && pwd'
+			step {
+				sh 'echo id && ls && pwd'
+			}
       }
   	}
   	stage('end') {
   		steps {
-        	// do something
-   			// more steps
+        	step {
+				sh 'echo id && ls && pwd'
+			}
        }
    	}
   }
