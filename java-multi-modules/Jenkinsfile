@@ -10,7 +10,8 @@ pipeline {
 			steps {
 				sh '''
 					cd java-multi-modules
-					ls -al
+					ls ~/.m2/ -al
+					id
 					mvn deploy
 				'''
 			}
