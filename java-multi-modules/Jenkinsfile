@@ -12,6 +12,7 @@ pipeline {
 					cd java-multi-modules
 					ls ~/.m2/ -al
 					id
+					mvn build-helper:parse-version versions:set -DnewVersion=1.1.0-SNAPSHOT versions:commit
 					mvn deploy
 				'''
 			}
