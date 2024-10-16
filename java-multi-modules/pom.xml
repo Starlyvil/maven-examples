@@ -19,7 +19,6 @@
     </properties>
 
     <modules>
-        <module>web</module>
         <module>password</module>
         <module>password-sha</module>
         <module>password-md5</module>
