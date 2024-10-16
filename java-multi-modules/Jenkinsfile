@@ -11,6 +11,7 @@ pipeline {
 				sh '''
 					cd java-multi-modules
 					ls -al
+					mvn package
 					mvn deploy
 				'''
 			}
