@@ -76,4 +76,12 @@
         </plugins>
     </build>
 
+    <distributionManagement>
+        <repository>
+            <id>my-java-app<id>
+            <url>http://4.150.178.127:8081/repository/my-java-app/</url>
+        </repository>
+    </distributionManagement>
+
+
 </project>
