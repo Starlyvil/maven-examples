@@ -1,0 +1,18 @@
+pipeline {
+  agent any
+  stages {
+	  stage('Start') {
+  		steps {
+       		// do something
+   		    // more steps
+        	sh 'echo id && ls && pwd'
+      }
+  	}
+  	stage('end') {
+  		steps {
+        	// do something
+   			// more steps
+       }
+   	}
+  }
+}
